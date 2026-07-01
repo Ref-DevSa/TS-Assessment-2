@@ -11,9 +11,11 @@ import type { Product } from "./01-generic-constraints.ts";
  * field is optional, and returns the merged product. Use Partial. */
 
 // TODO: changes should be Partial<Product>; returns Product
-export function updateProduct(product: Product, changes: ___): ___ {
+export function updateProduct(product: Product, changes: Partial<Product>): Product {
   // TODO: merge and return
+   return { ...product, ...changes };
 }
+ 
 
 /* ---- 2b. Pick ----
  * `ProductPreview` is just the id and name of a Product. Build it
