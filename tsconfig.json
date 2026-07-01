@@ -12,6 +12,7 @@
     "moduleDetection": "force",
     "noEmit": true,
     "jsx": "react-jsx",
+    "types": ["node", "vite/client"],
 
     /* Strict mode — every exercise is checked against these rules.
        Do NOT turn any of these off to make an error disappear.
